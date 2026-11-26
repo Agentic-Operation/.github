@@ -28,7 +28,7 @@ This register maps every preservation item in CR-AO-ORG-001 to its destination i
 | P-15 | Persona table and starting points | [Who this organization serves](../../profile/README.md#who-this-organization-serves) | Original ten-row persona table retained under its original heading; new enterprise-level persona orientation is separately presented under [Enterprise audiences](../../profile/README.md#enterprise-audiences) |
 | P-16 | AI-agent consumption guidance, seven-step instructions and machine interfaces | [Guidance for AI agents consuming this organization](../../profile/README.md#guidance-for-ai-agents-consuming-this-organization) | All seven steps and machine-interface descriptions retained |
 | P-17 | Get-started paths, quickstarts, reference stack and conformance command | [Get started](../../profile/README.md#get-started) | All five onboarding paths retained |
-| P-18 | Contribution guidance and Apache-2.0 licensing statement | [Contributing](../../profile/README.md#contributing) | Original contribution guidance and licence statement retained |
+| P-18 | Contribution guidance and licensing statement | [Contributing](../../profile/README.md#contributing) | Contribution guidance retained; the former organization-wide Apache-2.0 claim was corrected to reflect repository-specific MIT and Apache-2.0 licences verified from the LICENSE files |
 
 ## Implementation additions
 
