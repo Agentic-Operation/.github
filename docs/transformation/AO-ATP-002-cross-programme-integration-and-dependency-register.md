@@ -4,7 +4,7 @@
 |---|---|
 | Identifier | AO-ATP-002 |
 | Title | Cross-Programme Integration and Dependency Register |
-| Version | 0.1.0 |
+| Version | 0.1.1 |
 | Status | Proposed planning guidance |
 | Authority | Agentic-Operation |
 | Classification | Non-normative, evidence-led integration register |
@@ -213,11 +213,23 @@ Do not manufacture canonical records to make the diagram complete. Use explicit 
 
 ### 7.2 Process and metric alignment gaps
 
-The AOP Toolkit README states that its compiled fixture AOP carries a `process_alignment` block declaring two gaps:
-- no canonical network fault-management entry in the enterprise process catalogue;
-- no canonical MTTR or first-pass metric entry in the metrics catalogue.
+The AOP Toolkit fixture manifest carries a `process_alignment` block with one process gap and two metric gaps, alongside two metric references:
+- it declares no canonical Business Process for network line fault management;
+- it references Mean Time to Detect and AI Incident Escalation Compliance;
+- it declares no canonical p50 mean-time-to-restore metric;
+- it declares no canonical first-pass-fix-rate metric.
 
-The GitHub code search performed in this review returned no matching indexed results for the exact terms in the process and metrics catalogues. That is not sufficient evidence to conclude that the records do not exist. The owning catalogues must be checked through their current record indexes and governance registers before the gaps are either retained or closed.
+The follow-up catalogue inspection found an adjacent but non-equivalent Business Process: `processes:process-eo-operate-4njp7b` (Operate Technology Platforms), with the child Activity `processes:activity-eo-operate-ua7tgk` (Respond to Platform Incidents). Both records are lifecycle `candidate`, and their scope is general platform incidents rather than network line fault management. They are not valid canonical substitutes for the missing network fault-management process.
+
+The metrics catalogue contains:
+- `dea:metric-mean-time-to-recovery` (Mean Time to Recovery), version 1.2.0, lifecycle `admitted`, defined as an arithmetic mean in minutes from incident detection to service restoration;
+- `dea:metric-mean-time-to-detect` (Mean Time to Detect), lifecycle `candidate`;
+- `dea:metric-ai-incident-escalation-compliance` (AI Incident Escalation Compliance), lifecycle `candidate`;
+- `dea:metric-first-pass-anomaly-resolution-ran-operations` (First-Pass Anomaly Resolution (RAN Operations)), lifecycle `candidate`.
+
+The admitted Mean Time to Recovery record is not semantically equivalent to the fixture's `mttr-p50-minutes` baseline: an arithmetic mean and a 50th percentile are different statistics. The candidate first-pass anomaly metric is also not an admitted metric and must not be presented as canonical. The original metric gaps therefore need refinement, not blanket closure.
+
+The AOP programme and catalogue owners should reconcile metric identity, statistic, unit, subject and lifecycle before replacing any fixture gap with a canonical reference.
 
 ### 7.3 Evidence semantics and trust boundary
 
@@ -256,8 +268,8 @@ A name-only cross-reference is insufficient for a governed enterprise integratio
 | D-08 | OpenDEAM README/version badge | README says v0.8.0-alpha; VERSION/model say 0.9.1 | dea-architecture-framework | Reconcile release and badge metadata |
 | D-09 | Metamodel manifest release status | VERSION 1.0.0; manifest status draft | dea-metamodel | Confirm intended release status and align manifest/README/consumer guidance |
 | D-10 | AOP toolchain execution | Reference code and certificates present; local gate not run in this review | AOP programme | Run the documented multi-repository gate in a controlled environment and retain logs/artifact digests |
-| D-11 | Fault-management process alignment | Fixture declares gap; no matching indexed search result | Business Process catalogue owner | Search canonical process records and either bind an existing process or raise a catalogue CR |
-| D-12 | MTTR and first-pass metric alignment | Fixture declares gap; no matching indexed search result | Metrics catalogue owner | Search canonical metric records and either bind existing measures or raise a catalogue CR |
+| D-11 | Fault-management process alignment | Adjacent platform-incident Process and Activity exist, both candidate and not equivalent to network line fault management | Business Process catalogue owner | Keep the exact network line fault-management process gap open; assess whether a scoped contribution is required |
+| D-12 | MTTR and first-pass metric alignment | Admitted arithmetic-mean recovery metric exists; p50 gap remains; first-pass anomaly metric is candidate | Metrics catalogue owner with AOP programme | Reconcile statistic and subject; do not bind candidate metrics as canonical until admitted |
 | D-13 | Fixture provenance | 40 cases present; real-world provenance not established | AOP programme / scenario owner | Retain fixture classification or provide auditable collection provenance |
 | D-14 | End-to-end OpenDEA ↔ AOP mapping | Not yet demonstrated | Agentic-Operation integration lead with AOP/OpenDEA owners | Build the first traceable fault-management architecture and execution evidence chain |
 
