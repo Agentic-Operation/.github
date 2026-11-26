@@ -7,7 +7,7 @@
 | Target | [Organization profile](../profile/README.md) |
 | Status | Implemented in feature branch; pending PR review |
 
-This register maps every preservation item in CR-AO-ORG-001 to its destination in the revised organization profile. The original 290-line profile body has been retained in full, with its content order and technical details preserved. The implementation adds an enterprise operating-model orientation before that material and changes the original top-level title from “Agentic Operation” to “Agentic Operations”. No original technical section, scenario, table, diagram, repository/service description, persona guidance, AI-agent instruction, onboarding step or contribution statement was removed.
+This register maps every preservation item in CR-AO-ORG-001 to its destination in the revised organization profile. The original 290-line profile body has been preserved in substance, with its content order and technical details retained. The implementation adds an enterprise operating-model orientation before that material, updates the top-level title from “Agentic Operation” to “Agentic Operations”, and rewrites the legacy opening paragraph so that agent-management standards are correctly positioned as a foundational management layer within the wider enterprise operating model. No original technical section, scenario, table, diagram, repository/service description, persona guidance, AI-agent instruction, onboarding step or contribution statement was removed.
 
 | ID | Existing content | Revised profile destination | Disposition |
 |---|---|---|---|
