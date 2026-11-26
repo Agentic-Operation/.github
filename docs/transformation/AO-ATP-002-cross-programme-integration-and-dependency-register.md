@@ -4,7 +4,7 @@
 |---|---|
 | Identifier | AO-ATP-002 |
 | Title | Cross-Programme Integration and Dependency Register |
-| Version | 0.1.1 |
+| Version | 0.1.2 |
 | Status | Proposed planning guidance |
 | Authority | Agentic-Operation |
 | Classification | Non-normative, evidence-led integration register |
@@ -254,6 +254,16 @@ A reliable execution record must be able to bind together:
 
 A name-only cross-reference is insufficient for a governed enterprise integration.
 
+## 7.5 Fault-management remediation status (2026-11-26)
+
+AOP governance records [CR-041](https://github.com/agentic-operating-procedure/aop-governance/blob/main/change-requests/CR-041-fault-management-fixture-and-policy-integrity.md) as **Proposed**. Two AOP Toolkit implementation PRs have merged: [PR #1](https://github.com/agentic-operating-procedure/aop-toolkit/pull/1) adds a diagnostic elapsed-cycle-time validator and regression tests; [PR #2](https://github.com/agentic-operating-procedure/aop-toolkit/pull/2) corrects the case generator so generated `ended_at` follows `started_at + cycle_time`, including hour-boundary cases.
+
+These are partial implementation increments, not CR-041 closure. The checked-in 40-case corpus remains at blob SHA `942587be2a79dba480208d490a9d7767911426f8`. Validator tests exercise the validator; generator tests exercise generated cases. Neither demonstrates that the checked-in corpus has been regenerated, that event boundary/order semantics have been adjudicated, or that the full corpus passes. A direct check of this exact corpus revision found at least one step timestamp outside the declared interval in all 40 cases, non-monotonic listed step timestamps in 36/40 cases, and elapsed-duration mismatch in 40/40 cases. The event exceptions still require domain adjudication; they must not be normalized without semantics.
+
+The live OpenDEA Business Process catalogue contains candidate Process `processes:process-eo-operate-4njp7b` (Operate Technology Platforms) and candidate Activity `processes:activity-eo-operate-ua7tgk` (Respond to Platform Incidents). Their scope is platform operation/incidents, not network line fault management. The Process owner field is confirmed, but the record lifecycle remains candidate. Neither record is a canonical substitute for the missing network line fault-management process.
+
+The detailed owner requests, exact evidence and acceptance gates are recorded in [AO-WE-001 Upstream Dependency Handoff](../examples/AO-WE-001-upstream-dependency-handoff.md). Agentic-Operation remains a consumer: no AOP or OpenDEA artefact is modified by this reconciliation.
+
 ## 8. Dependency register and ownership
 
 | ID | Dependency / action | Current state | Owner | Next action |
@@ -269,6 +279,12 @@ A name-only cross-reference is insufficient for a governed enterprise integratio
 | D-09 | Metamodel manifest release status | VERSION 1.0.0; manifest status draft | dea-metamodel | Confirm intended release status and align manifest/README/consumer guidance |
 | D-10 | AOP toolchain execution | Reference code and certificates present; local gate not run in this review | AOP programme | Run the documented multi-repository gate in a controlled environment and retain logs/artifact digests |
 | D-11 | Fault-management process alignment | Adjacent platform-incident Process and Activity exist, both candidate and not equivalent to network line fault management | Business Process catalogue owner | Keep the exact network line fault-management process gap open; assess whether a scoped contribution is required |
+| D-15 | AOP CR-041 fault-management integrity | CR-041 Proposed; AOP Toolkit PR #1 diagnostic validator and PR #2 generator boundary correction merged; checked-in source corpus SHA unchanged and still fails current checks | AOP programme, Context Graph, Toolkit, Harness and Conformance owners | Coordinate repository-level implementation and acceptance using the [upstream dependency handoff](../examples/AO-WE-001-upstream-dependency-handoff.md); do not treat unit tests or generator changes as corpus repair |
+| D-16 | Network line fault-management Business Process | Current adjacent Process `processes:process-eo-operate-4njp7b` and Activity `processes:activity-eo-operate-ua7tgk` remain candidate and describe platform incidents, not network line fault management | Business Process catalogue owner and accountable process owner | Obtain a process disposition; do not bind either candidate as a substitute or create a new record without owner decision |
+| D-17 | AOP procedure branch, dispatch authority and skill coverage | CR-041 defines requirements; no accepted resolution or end-to-end enforcement evidence established in this reconciliation | AOP programme owner and repository owners named in CR-041 | Resolve SOP/fixture branch semantics, dispatch authority precedence, human handoff and permitted-action/skill bindings before runtime integration |
+| D-18 | OpenDEA Information Systems runtime binding | Planned/proposed ISF and proposed ISS/interface approval remain catalogue assertions; deployment and enterprise authorization not established | OpenDEA catalogue owners and enterprise system/service owners | Obtain approved catalogue state and concrete provider, consumer, system/deployment and contract evidence before callable integration |
+| D-19 | Metric semantics and fixture outcome claims | p50 versus arithmetic-mean recovery remains a semantic mismatch; fixture corpus is not a validated baseline | OpenDEA Metrics owner with AOP Evaluation owner | Agree statistic, subject, unit, denominator, observation window and provenance; withhold performance claims until independently reproducible |
+
 | D-12 | MTTR and first-pass metric alignment | Admitted arithmetic-mean recovery metric exists; p50 gap remains; first-pass anomaly metric is candidate | Metrics catalogue owner with AOP programme | Reconcile statistic and subject; do not bind candidate metrics as canonical until admitted |
 | D-13 | Fixture provenance | 40 cases present; real-world provenance not established | AOP programme / scenario owner | Retain fixture classification or provide auditable collection provenance |
 | D-14 | End-to-end OpenDEA ↔ AOP mapping | Not yet demonstrated | Agentic-Operation integration lead with AOP/OpenDEA owners | Build the first traceable fault-management architecture and execution evidence chain |
@@ -342,12 +358,13 @@ The scenario is ready for wider reuse only when:
 
 | Order | Work package | Output |
 |---:|---|---|
-| 1 | Resolve OpenDEA catalogue and version metadata discrepancies with the owning programme | Confirmed upstream dependency baseline; scoped upstream CRs where required |
-| 2 | Reconcile the fault-management scenario against actual OpenDEA records | Versioned entity and relationship crosswalk, with explicit gaps |
-| 3 | Exercise the AOP toolkit and reference harness in a controlled workspace | Reproducible logs, compiled AOP, registry record, conformance and harness evidence |
-| 4 | Build the end-to-end traceability artefact | OpenDEA model slice + AOP + service/interface bindings + evidence chain |
-| 5 | Evaluate the scenario against enterprise outcome measures | Baseline and post-run measures, with evidence provenance and limitations |
-| 6 | Publish the worked example in Agentic-Operation | Practitioner reference with role-specific guidance and clear authority boundaries |
+| 1 | Obtain AOP programme disposition of CR-041 and establish the repository-level work/acceptance ledger | Accepted or revised CR-041, named owners and implementation sequence |
+| 2 | Resolve OpenDEA process applicability and service/system ownership for the scenario | Owner-approved process disposition; affected service and system identities or explicit gaps |
+| 3 | Complete CR-041 case semantics, fixture, procedure-branch, authority and skill work | Corrected source artefacts, corpus validation, positive/negative tests and version/digest pins |
+| 4 | Verify OpenDEA catalogue approval and runtime service bindings | Approved canonical records, provider/consumer/deployment identity and contract evidence |
+| 5 | Execute the pinned AOP multi-repository reference gate and replay | Reproducible compilation, conformance, authorization, run and replay evidence |
+| 6 | Evaluate the scenario against valid enterprise outcome measures | Approved baseline and post-run measures, with provenance and limitations |
+| 7 | Update and publish the integrated worked example | Evidence-linked practitioner reference with unresolved decisions and authority boundaries explicit |
 
 Agentic-Operation may proceed with the integration method and worked example while upstream catalogue owners address the documented discrepancies. Where a mapping is unresolved, the example must show the gap rather than silently inventing a canonical record.
 
