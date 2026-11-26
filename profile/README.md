@@ -432,4 +432,4 @@ The [agent-registry](https://github.com/Agentic-Operation/agent-registry) serves
 
 Each repository has its own `CONTRIBUTING.md` (branch convention `vibe/<slug>-…`, draft PRs, and conformance-gated CI). Read the relevant repository guidance before proposing normative or implementation changes.
 
-All repositories in this organization are public and licensed **Apache-2.0**.
+All repositories in this organization are public, but licensing is repository-specific. The three specification repositories (`agent-profile-management`, `agent-bootstrap-management` and `agent-discovery-card`) use Apache-2.0. The organization profile repository (`.github`), six reference/service repositories (`agent-registry`, `model-authority`, `agent-rollout-controller`, `tool-mcp-manager`, `agent-orchestrator` and `agent-conformance`), and `agent-standard-docs` use MIT. Each repository's `LICENSE` file is authoritative; verify it before reuse.
