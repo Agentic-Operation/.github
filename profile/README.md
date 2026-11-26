@@ -138,6 +138,7 @@ Use the source that owns the subject. The organization profile is an orientation
 | AOP concepts and specifications | AOP definition, normative model, architecture and programme governance | AOP repositories above |
 | External industry references | Context and interoperability relationships, not automatic substitutes for internal normative sources | References cited in the relevant specifications |
 | Enterprise architecture transformation guidance | Practitioner methodology, decision instruments, patterns and assurance templates | [AO-ATP-001](../docs/transformation/AO-ATP-001-enterprise-architecture-and-service-delivery-transformation-playbook.md), [AO-ATP-002](../docs/transformation/AO-ATP-002-cross-programme-integration-and-dependency-register.md), [AO-ATP-003](../docs/transformation/AO-ATP-003-architecture-transformation-toolkit.md) |
+| Worked architecture application | Application of AO-ATP-003 to fault-management architecture, work disposition and transition planning | [AO-WE-001](../docs/examples/AO-WE-001-fault-management-opendea-aop-worked-example.md) and [AO-WE-001 / AO-ATP-003 application](../docs/examples/AO-WE-001-AO-ATP-003-application.md) |
 
 ## Enterprise reference model and detailed agent management
 
