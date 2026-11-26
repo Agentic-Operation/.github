@@ -4,7 +4,7 @@
 |---|---|
 | Identifier | AO-ATP-002 |
 | Title | Cross-Programme Integration and Dependency Register |
-| Version | 0.1.0 |
+| Version | 0.1.1 |
 | Status | Proposed planning guidance |
 | Authority | Agentic-Operation |
 | Classification | Non-normative, evidence-led integration register |
