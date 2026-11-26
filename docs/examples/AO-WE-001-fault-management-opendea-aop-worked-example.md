@@ -407,3 +407,8 @@ The AO-ATP-003 application of this crosswalk is maintained as a companion assess
 - [Transition and Acceptance Plan](./AO-WE-001-transition-and-acceptance-plan.md)
 
 The application is a proposed assessment, not an approved implementation decision. It does not change the status of this worked example: architecture crosswalk only; execution remains unvalidated.
+
+
+## 15. Upstream dependency handoff
+
+The current upstream state and owner-specific evidence requests are maintained in the [AO-WE-001 Upstream Dependency Handoff](./AO-WE-001-upstream-dependency-handoff.md). This companion records AOP CR-041's proposed status and partial Toolkit implementation, the unchanged failing source corpus, and the OpenDEA candidate process records that must not be treated as substitutes for network line fault management. It does not alter the source crosswalk or its execution-unvalidated status.

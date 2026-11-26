@@ -24,6 +24,7 @@ The companion registers are:
 - [Architecture disposition decision register](./AO-WE-001-architecture-disposition-register.md)
 - [Work disposition register](./AO-WE-001-work-disposition-register.md)
 - [Transition and acceptance plan](./AO-WE-001-transition-and-acceptance-plan.md)
+- [Upstream Dependency Handoff and Reconciliation](./AO-WE-001-upstream-dependency-handoff.md)
 
 ## 2. Transformation intent
 
