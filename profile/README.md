@@ -313,13 +313,15 @@ The architecture is a conceptual view of repository responsibilities, not a mand
 
 ## Repository map
 
-### Standards: normative contracts
+### Normative specifications (draft)
 
-- [agent-profile-management](https://github.com/Agentic-Operation/agent-profile-management) — Spec-443: profile schema, worked examples, conformance kit, publication/validation API, and `spec443` CLI.
-- [agent-bootstrap-management](https://github.com/Agentic-Operation/agent-bootstrap-management) — Spec-444: bootstrap schema, per-environment `environments[]` overrides, scaffold/deploy API, and `spec444` CLI.
-- [agent-discovery-card](https://github.com/Agentic-Operation/agent-discovery-card) — Spec-445: card schema (additive over A2A), Agent Card Registry API, WoA discovery, and `spec445` CLI.
+- [agent-profile-management](https://github.com/Agentic-Operation/agent-profile-management) — Spec-443: normative draft v1.0.0-alpha; profile schema, worked examples, conformance kit, publication/validation API, and `spec443` CLI.
+- [agent-bootstrap-management](https://github.com/Agentic-Operation/agent-bootstrap-management) — Spec-444: normative draft v1.0.0-alpha; bootstrap schema, per-environment `environments[]` overrides, scaffold/deploy API, and `spec444` CLI.
+- [agent-discovery-card](https://github.com/Agentic-Operation/agent-discovery-card) — Spec-445: normative draft v1.0.0-alpha; card schema (additive over A2A), Agent Card Registry API, WoA discovery, and `spec445` CLI.
 
 ### Runtime services: reference implementations
+
+These repositories provide reference implementations and local run instructions. The listed ports are local run defaults, not service endpoints or availability guarantees. Repository presence and passing CI do not establish that a service is deployed, reachable, production-ready, or operationally supported.
 
 - [agent-registry](https://github.com/Agentic-Operation/agent-registry) — Agent Card Registry: card registration, search, versions, verification, environment instances, and WoA at `/.well-known/woa.json` (`:8080`).
 - [model-authority](https://github.com/Agentic-Operation/model-authority) — governed model records (ID/UUID/version/CID, provenance, evaluation evidence, licence, risk class, approved environments); resolves `model_ref` to a pinned CID and emits re-certification webhooks on deprecation (`:8090`).
