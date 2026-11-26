@@ -1,5 +1,150 @@
-# Agentic Operation
+# Agentic Operations
 
+> **The enterprise operating model for organizing, governing, executing, measuring and continuously improving work performed by coordinated human and non-human agents.**
+
+Agentic Operations is the enterprise operating model through which an organization organizes, governs, executes, measures and continuously improves its work using coordinated human and non-human agents operating within defined intent, context, authority, constraints and accountability.
+
+This organization advances the enterprise operating model for Agentic Operations. It brings together enterprise-level operating model guidance and the management standards, reference services and assurance mechanisms needed to make AI Agents accountable operational actors. It serves enterprise leaders and practitioners who are moving beyond isolated AI assistants, experiments and proofs of concept toward governed operational integration and value-stream transformation.
+
+The organization has two complementary concerns:
+
+- **Enterprise Agentic Operations:** the enterprise outcomes, value streams, capabilities, organization, workforce, decision rights, governance, performance and transformation required to operate with coordinated human and non-human agents.
+- **AI Agent management:** the identity, profile, onboarding, discovery, model and tool dependencies, deployment, runtime assurance and lifecycle governance that make agents manageable and accountable.
+
+Agent management is essential infrastructure for the wider operating model. It is not, by itself, the complete enterprise operating model.
+
+## Why the enterprise operating model is changing
+
+AI Agents are moving from isolated assistance into work systems: participating in processes, coordinating with people and other agents, interacting with enterprise systems, and taking actions with business consequences. This changes more than the technology stack. It changes how work is allocated, how decisions are made, how authority is delegated, how outcomes are assured, and how accountability is maintained.
+
+An enterprise therefore needs to answer questions beyond whether an agent can perform a task:
+
+- Which business outcomes and value streams are being changed, and how will the change be measured?
+- Which activities and decisions may be performed by people, agents, or combinations of both?
+- Who owns the outcome, the process, the agent, and the authority delegated to it?
+- What intent, context, constraints, policies and evidence govern execution?
+- How are exceptions, uncertainty, escalation, human approval and recovery handled?
+- How are changes to agents, models, skills, tools, procedures and operating environments assessed?
+- How does operational evidence feed continuous improvement?
+
+The operating model must connect business intent to execution and assurance. It must also ensure that the enterprise can explain not only what its agents are capable of doing, but what they are authorized to do in a particular context and who remains accountable.
+
+## The Agentic Operations model
+
+The enterprise operating model brings together the following concerns. This is a conceptual organizing view, not a claim that every organization must implement a fixed organizational structure.
+
+| Concern | Enterprise question |
+|---|---|
+| **Outcomes and value** | What stakeholder and business outcomes must be realized, and how is value evidenced? |
+| **Value streams and work** | Which end-to-end flows of work are being redesigned, and where do human and non-human actors participate? |
+| **Capabilities and services** | What business and operational capabilities are required to deliver the outcomes? |
+| **Organization and workforce** | How are responsibilities distributed across people, teams, agents and service providers? |
+| **Intent and decision rights** | What objectives, policies, authority boundaries and escalation rules govern decisions and actions? |
+| **Procedures and execution** | How is operational intent specified and translated into controlled execution? |
+| **Technology and information** | Which models, agents, skills, tools, systems, data and integration mechanisms support the work? |
+| **Governance and assurance** | How are risk, compliance, security, conformance, accountability and evidence maintained? |
+| **Performance and improvement** | How are outcomes, service performance, quality, cost, risk and operational learning measured and improved? |
+
+The unit of transformation should be a business outcome or value stream, not the number of agents deployed. An agent count can describe adoption activity; it cannot establish that an enterprise has transformed its operating model or realized value.
+
+### Operating model and operating mode
+
+These terms are related but not interchangeable:
+
+- **Enterprise operating model:** how the enterprise intentionally designs, organizes, governs, operates, measures and evolves its way of working to achieve outcomes.
+- **Agentic operating mode:** the resulting regime of work in which human and non-human agents participate in operational activity under defined intent, authority and constraints.
+
+The enterprise operating model governs and evolves the broader operating mode. The distinction is important when describing enterprise transformation: the presence of agents in a workflow does not, by itself, demonstrate that the enterprise has designed and adopted an agentic operating model.
+
+## How the model is realized: relationship with Agentic Operating Procedure
+
+Agentic Operations and Agentic Operating Procedure (AOP) are complementary programmes with distinct authority.
+
+- **Agentic Operations** addresses the enterprise operating model: why and where work changes, what outcomes are sought, how capabilities and responsibilities are organized, and how governance, performance and accountability are maintained.
+- **Agentic Operating Engineering** is the discipline for engineering agentic operational work.
+- **Agentic Operating Procedure** is the structured operational specification governing how agents interpret intent, make decisions, coordinate capabilities and execute actions within explicit operational boundaries.
+- **Agent Skill** is a reusable capability that an AOP may invoke.
+- **Domain Agent Harness** is the controlled execution environment for a domain.
+- **Agent** is the execution actor operating within the procedure, harness and declared authority.
+
+The AOP programme's six-level conceptual hierarchy is owned and maintained by the AOP Foundations authority. It is reproduced here only to explain the integration boundary; this organization does not redefine it.
+
+| Level | AOP concept | Responsibility |
+|---:|---|---|
+| 1 | Agentic Operating Engineering | The discipline |
+| 2 | Agentic Operating Procedure | The operational specification |
+| 3 | Agent Skill | The reusable capability |
+| 4 | Domain Agent Harness | The controlled execution environment |
+| 5 | Agent | The execution actor |
+| 6 | Agentic Operations | The broader operating mode |
+
+**The enterprise operating model described by this organization is not a replacement for, or unilateral revision of, level 6 in the AOP hierarchy.** The enterprise operating model intentionally designs and governs the conditions in which the broader operating mode is established and evolved.
+
+Authoritative AOP programme repositories:
+
+| AOP repository | Authority | Link |
+|---|---|---|
+| `aop-foundations` | Definition, conceptual hierarchy, vocabulary and boundaries | [Repository](https://github.com/agentic-operating-procedure/aop-foundations) |
+| `aop-spec` | Normative AOP model, dimensions, schemas, contracts and conformance clauses | [Repository](https://github.com/agentic-operating-procedure/aop-spec) |
+| `aop-architecture` | AOP reference architecture, layers, trust boundaries, pipeline and threat model | [Repository](https://github.com/agentic-operating-procedure/aop-architecture) |
+| `aop-governance` | AOP programme change control, decisions, change requests and programme plan | [Repository](https://github.com/agentic-operating-procedure/aop-governance) |
+| `aop-context-graph` | Context substrate and observed-work model | [Repository](https://github.com/agentic-operating-procedure/aop-context-graph) |
+| `aop-toolkit` | AOP tooling and implementation utilities | [Repository](https://github.com/agentic-operating-procedure/aop-toolkit) |
+| `aop-reference-harness` | Reference harness and runtime implementation | [Repository](https://github.com/agentic-operating-procedure/aop-reference-harness) |
+| `aop-registry` | AOP publication, versioning, provenance and discovery | [Repository](https://github.com/agentic-operating-procedure/aop-registry) |
+| `aop-conformance` | AOP document and harness conformance | [Repository](https://github.com/agentic-operating-procedure/aop-conformance) |
+| `aop-landscape` | Comparison with adjacent concepts and disciplines | [Repository](https://github.com/agentic-operating-procedure/aop-landscape) |
+
+The live AOP organization inventory currently confirms these repositories. The AOP Governance repository also contains a planned estate map naming `aop-evaluation`, `aop-adoption` and `aop-examples`; those three repositories were not present in the live organization inventory at the time this profile was updated, so they are intentionally not presented here as available repositories.
+
+For AOP normative requirements, schemas, dimensions and conformance, consult `aop-spec`. For conceptual definitions and the six-level hierarchy, consult `aop-foundations`. For programme change authority, consult `aop-governance`. This organization does not own or override those artefacts. Integration between the programmes is by explicit, versioned contracts and references.
+
+## From experimentation to enterprise transformation
+
+Organizations commonly encounter agentic work through experiments and proofs of concept. Enterprise transformation requires a deliberate progression from local technical feasibility to governed, integrated and measurable changes in how work is performed.
+
+The following five stages are a **conceptual progression**, not a normative maturity model, scoring framework, certification scheme or assertion that all organizations follow a linear path.
+
+1. **Experimentation** — teams explore use cases, models, agents and tools in labs and proofs of concept. The emphasis is on feasibility and learning; production authority and enterprise integration may be limited.
+2. **Controlled adoption** — selected agents are introduced into bounded use cases with named owners, approved dependencies, explicit permissions, risk controls and observable outcomes.
+3. **Operational integration** — agents become managed participants in business and operational processes. Identity, provisioning, discovery, orchestration, service management, assurance and human escalation are integrated into operational practice.
+4. **Value-stream transformation** — end-to-end work is redesigned around outcomes. Human and non-human responsibilities, decision points, procedures, skills, systems and controls are coordinated across the value stream, with performance and value measured.
+5. **Agentic enterprise** — the enterprise systematically governs and continuously evolves a coordinated human and non-human workforce across its operating model, with adaptive execution bounded by intent, authority, risk and accountability.
+
+Progress should be evidenced through business outcomes, process performance, service quality, control effectiveness, workforce experience, resilience and realized value. The deployment of more agents, by itself, is not evidence of progression.
+
+## Who this organization serves
+
+- **Enterprise executives and transformation leaders** — understand the operating model implications, transformation choices, value realization and enterprise accountability.
+- **Business leaders, process owners and business analysts** — identify outcomes and value streams, redesign work, allocate responsibilities and define decision and escalation boundaries.
+- **Enterprise, business and solution architects** — connect operating model concerns to capabilities, procedures, information, applications, platforms, integration and assurance.
+- **AI, platform and software engineers** — implement agent identity, provisioning, discovery, orchestration, runtime integration and conformance.
+- **Operations and service management** — manage deployed agents as operational actors, including inventory, health, change, service performance and recovery.
+- **Risk, security, compliance and assurance teams** — assess delegated authority, model and tool dependencies, impact, integrity, evidence and continuing authorization.
+- **Consultants and transformation practitioners** — assess operating model implications, structure transformation initiatives and connect business change to technical and governance implementation.
+- **AI agents and automated tooling** — discover authoritative sources, resolve normative requirements, validate artefacts and operate within explicit authority boundaries.
+
+## Documentation and authority map
+
+Use the source that owns the subject. The organization profile is an orientation and navigation layer; it does not supersede repository-level normative contracts.
+
+| Source class | What it establishes | Where to go |
+|---|---|---|
+| Enterprise conceptual baseline | Organization-level definition, semantic distinctions and cross-programme boundaries | [AO-CBC-001](../docs/architecture/AO-CBC-001-conceptual-baseline.md) |
+| Organization change authority | Approved scope and requirements for this profile evolution | [CR-AO-ORG-001](../change-requests/CR-AO-ORG-001-organization-purpose-and-authority.md) |
+| Agent management specifications | Normative agent profile, bootstrap and discovery contracts | Spec-443, Spec-444 and Spec-445 repositories below |
+| Model governance | Model approval, assignment and governance authority | [model-authority](https://github.com/Agentic-Operation/model-authority) |
+| Reference management services | Implementations supporting agent lifecycle and operations | Runtime service repositories below |
+| AOP concepts and specifications | AOP definition, normative model, architecture and programme governance | AOP repositories above |
+| External industry references | Context and interoperability relationships, not automatic substitutes for internal normative sources | References cited in the relevant specifications |
+
+## Enterprise reference model and detailed agent management
+
+The enterprise-level framing above is realized in part through the established Agentic AI Management Standards and reference services. The following material retains the existing technical guidance, contracts, architecture, scenarios, governance, service descriptions, persona paths, AI-agent instructions and onboarding resources.
+
+---
+
+# Agentic Operations
 ## Agentic AI Management Standards
 
 **Define, onboard, discover, orchestrate, and govern AI agents as accountable operational actors in your enterprise / organization.**
