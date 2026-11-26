@@ -137,6 +137,7 @@ Use the source that owns the subject. The organization profile is an orientation
 | Reference management services | Implementations supporting agent lifecycle and operations | Runtime service repositories below |
 | AOP concepts and specifications | AOP definition, normative model, architecture and programme governance | AOP repositories above |
 | External industry references | Context and interoperability relationships, not automatic substitutes for internal normative sources | References cited in the relevant specifications |
+| Enterprise architecture transformation guidance | Practitioner methodology, decision instruments, patterns and assurance templates | [AO-ATP-001](../docs/transformation/AO-ATP-001-enterprise-architecture-and-service-delivery-transformation-playbook.md), [AO-ATP-002](../docs/transformation/AO-ATP-002-cross-programme-integration-and-dependency-register.md), [AO-ATP-003](../docs/transformation/AO-ATP-003-architecture-transformation-toolkit.md) |
 
 ## Enterprise reference model and detailed agent management
 
@@ -333,6 +334,13 @@ These repositories provide reference implementations and local run instructions.
 ### Documentation
 
 - [agent-standard-docs](https://github.com/Agentic-Operation/agent-standard-docs) — communication pack and documentation site: triad overview, audience one-pagers, model authority, glossary, FAQ, conformance cheat-sheet, worked example, architecture diagrams, and references.
+
+### Enterprise architecture and transformation guidance
+
+- [AO-ATP-001](../docs/transformation/AO-ATP-001-enterprise-architecture-and-service-delivery-transformation-playbook.md) — enterprise architecture and service-delivery transformation playbook.
+- [AO-ATP-002](../docs/transformation/AO-ATP-002-cross-programme-integration-and-dependency-register.md) — cross-programme integration and dependency register.
+- [AO-ATP-003](../docs/transformation/AO-ATP-003-architecture-transformation-toolkit.md) — practitioner instruments, architecture disposition decisions, transformation patterns, methods, tools and reusable templates.
+- [Architecture Transformation Toolkit](../docs/toolkit/architecture-transformation/README.md) — instrument catalogue, decision frameworks, pattern catalogue and templates.
 
 ## Assurance: from authoring to runtime
 
