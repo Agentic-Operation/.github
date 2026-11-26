@@ -2,11 +2,11 @@
 
 ## Agentic AI Management Standards
 
-**Define, onboard, discover, orchestrate, and govern AI agents as accountable operational actors.**
+**Define, onboard, discover, orchestrate, and govern AI agents as accountable operational actors in your enterprise / organization.**
 
-AI agents are moving from isolated assistants into operational environments: supporting employees, participating in business processes, delivering services to customers and partners, and interacting with other agents. That transition creates an organizational management problem, not merely a model-integration problem.
+AI agents are moving from isolated assistants into operational environments: supporting employees, participating in business processes, delivering services to customers and partners, and interacting with other agents. That transition creates an organizational management problem and also an opportunity, not just a model-integration problem.
 
-**Agentic Operation** is the home of the **Agentic AI Management Standards**: machine-readable contracts and reference runtime services for managing AI agents throughout their lifecycle. The standards provide a consistent way to describe an agent, establish how it is provisioned and operated, make it discoverable to authorized consumers, and govern the models and tools on which it depends.
+**Agentic Operation** is an operating model paradigm that expands the three pillars of an organization with the fusion of AI Agents. It fuses the home of the **Agentic AI Management Standards**: machine-readable contracts and reference runtime services for managing AI agents throughout their lifecycle into an new organization operating model. The core AI Agent standards provide a consistent way to describe an agent, establish how it is provisioned and operated, make it discoverable to authorized consumers, and govern the models and tools on which it depends.
 
 The organizational objective is straightforward:
 
