@@ -5,7 +5,7 @@
 | Change request | [CR-AO-ORG-001](../../change-requests/CR-AO-ORG-001-organization-purpose-and-authority.md) |
 | Controlling baseline | [AO-CBC-001](../architecture/AO-CBC-001-conceptual-baseline.md) |
 | Target | [Organization profile](../../profile/README.md) |
-| Status | Implemented in feature branch; pending PR review |
+| Status | Implementation merged to `main`; post-merge verification recorded below |
 
 This register maps every preservation item in CR-AO-ORG-001 to its destination in the revised organization profile. The original 290-line profile body has been preserved in substance, with its content order and technical details retained. The implementation adds an enterprise operating-model orientation before that material, updates the top-level title from “Agentic Operation” to “Agentic Operations”, and rewrites the legacy opening paragraph so that agent-management standards are correctly positioned as a foundational management layer within the wider enterprise operating model. No original technical section, scenario, table, diagram, repository/service description, persona guidance, AI-agent instruction, onboarding step or contribution statement was removed.
 
@@ -48,14 +48,21 @@ The live AOP organization inventory confirmed `aop-foundations`, `aop-spec`, `ao
 
 The AOP Governance repository's estate table also names `aop-evaluation`, `aop-adoption` and `aop-examples`, but those three were absent from the live organization inventory checked for this implementation. The profile therefore records the discrepancy and does not link to those repositories as if they were available. This does not alter AOP's governance plan or assign those responsibilities to Agentic-Operation.
 
-## Verification performed
+## Post-merge verification
 
-- Re-fetched the merged CR-AO-ORG-001, AO-CBC-001 and current profile from `main` before implementation.
-- Verified CR-AO-ORG-001 PR #3 is merged.
-- Compared the original and revised profile construction: the original profile body is retained, with only the top-level title changed and the new enterprise orientation prepended.
-- Enumerated the live AOP organization repositories and inspected the README authority statements for Foundations, Specification, Architecture and Governance.
-- Kept this change within `Agentic-Operation/.github`; no AOP repository or agent-management normative repository was modified.
+- PR #4 implementation and PR #5 navigation correction are both merged to `main`; PR #5 merge commit: `20ada08477294de95c588d94bee14f4b3513322c`.
+- Re-fetched the current profile and preservation register from `main`; the profile is 434 lines and the P-15 mapping distinguishes the original persona table from the enterprise-audience section.
+- Confirmed the live Agentic-Operation organization contains all ten repositories linked by the profile (three specification repositories, six reference-management/service repositories, and the documentation repository); the six linked persona/quick-start communication documents checked also exist.
+- Inspected the three specification documents. Spec-443, Spec-444 and Spec-445 each identify themselves as normative drafts, v1.0.0-alpha. The profile now states that maturity explicitly and does not imply final approval.
+- Inspected all six reference-management/service READMEs and the documentation repository README. Local run commands and reference responsibilities are documented; repository inspection does not establish live deployment, reachability, production readiness or operational support. The profile now states this limitation and qualifies the listed ports as local run defaults.
+- Latest observed CI runs for the three specification repositories and five of the six service/reference repositories were successful. The `agent-standard-docs` repository has three latest `docs-lint` failures; the latest log identifies five Markdownlint errors in `communication/10-org-landing-page.md` (MD022 and MD036). This is recorded as an outstanding documentation-repository issue, not attributed to the Agentic-Operation profile.
+- The `.github` repository has no Actions workflow runs returned for the PR #5 merge commit or `main`; therefore no CI pass is claimed for the organization profile repository.
+- Kept this implementation within `Agentic-Operation/.github`; no AOP repository or agent-management normative contract was modified.
 
-## Remaining review checks
+## Remaining acceptance limitations
 
-The pull request review should still check rendered Markdown and Mermaid diagrams, internal anchors, external link reachability, and repository-level CI. The existing runtime service ports and standards mappings have been preserved from the baseline profile; this documentation change does not certify that those services are currently deployed or that external references remain at the latest versions.
+- Live deployment and health of the six reference services have not been independently established. The profile describes reference implementations, not verified production endpoints.
+- The `agent-standard-docs` Markdown lint failure remains to be remediated in that repository under its own scoped change.
+- Rendered Markdown/Mermaid presentation and external standards-link freshness have not been exhaustively certified.
+
+These limitations do not invalidate the profile's repository inventory or its conceptual authority boundaries, but they prevent claiming full operational verification of the wider reference-service estate.
