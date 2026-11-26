@@ -394,3 +394,16 @@ The following blob SHAs identify the exact catalogue records inspected for this 
 | First-Pass Anomaly Resolution (RAN Operations) metric | 1.0.0 | candidate | `049b8b7e62ba51cd290c50cd2ea38ab1776ecdda` |
 
 For canonical repository locations, use the catalogue links and record paths in Sections 4–6. Where a repository still has a legacy name, the current live repository path is the resolvable source; do not infer a destination URL from the OpenDEAM rename target.
+
+
+## 14. Architecture transformation application
+
+The AO-ATP-003 application of this crosswalk is maintained as a companion assessment so that the original source mapping and evidence limitations remain intact. It provides the architecture disposition register, work disposition register, discovery/evidence register, and staged transition and acceptance plan.
+
+- [AO-WE-001 / AO-ATP-003 Architecture Transformation Application](./AO-WE-001-AO-ATP-003-application.md)
+- [Discovery and Evidence Register](./AO-WE-001-discovery-and-evidence-register.md)
+- [Architecture Disposition Register](./AO-WE-001-architecture-disposition-register.md)
+- [Work Disposition Register](./AO-WE-001-work-disposition-register.md)
+- [Transition and Acceptance Plan](./AO-WE-001-transition-and-acceptance-plan.md)
+
+The application is a proposed assessment, not an approved implementation decision. It does not change the status of this worked example: architecture crosswalk only; execution remains unvalidated.
