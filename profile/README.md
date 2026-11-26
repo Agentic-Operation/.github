@@ -113,7 +113,7 @@ The following five stages are a **conceptual progression**, not a normative matu
 
 Progress should be evidenced through business outcomes, process performance, service quality, control effectiveness, workforce experience, resilience and realized value. The deployment of more agents, by itself, is not evidence of progression.
 
-## Who this organization serves
+## Enterprise audiences
 
 - **Enterprise executives and transformation leaders** — understand the operating model implications, transformation choices, value realization and enterprise accountability.
 - **Business leaders, process owners and business analysts** — identify outcomes and value streams, redesign work, allocate responsibilities and define decision and escalation boundaries.
@@ -144,7 +144,6 @@ The enterprise-level framing above is realized in part through the established A
 
 ---
 
-# Agentic Operations
 ## Agentic AI Management Standards
 
 **Define, onboard, discover, orchestrate, and govern AI agents as accountable operational actors in your enterprise / organization.**
