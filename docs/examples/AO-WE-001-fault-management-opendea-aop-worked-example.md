@@ -356,3 +356,41 @@ However, the business-process mapping remains candidate/ unresolved, some inform
 The correct next step is therefore not to claim a completed end-to-end implementation. It is to resolve the upstream semantic, governance and evidence defects, then run the AOP toolchain against a validated scenario and build the replayable integration evidence chain.
 
 The worked example demonstrates how the programmes should connect. It does not certify a production operating environment.
+
+
+## 13. OpenDEA source-record pins
+
+The following blob SHAs identify the exact catalogue records inspected for this crosswalk. They pin the content used for this analysis; they do not imply deployment or runtime availability.
+
+| Record | Version | Lifecycle / approval | Blob SHA |
+|---|---|---|---|
+| Incident and Problem Management capability | 1.0.0 | active | `e717785afa1ea185b8743500ee5bdcf482975078` |
+| Network Monitoring Service (Business Service) | 0.1.0 | active | `e9c6faac0d00bb9bfd9c7f48acd1cb19bb392c26` |
+| Operate Technology Platforms (Business Process) | 1.0.0 | candidate | `844f9175b920ae331bf42c72cf5fca683b8f26e3` |
+| Respond to Platform Incidents (Activity) | 1.0.0 | candidate | `13c152401bf16e71e6c1321d6ebff8e1e10e6a34` |
+| Respond to Platform Incidents Verification (Task) | 1.0.0 | candidate | `435b95e56d0f51bd14474feb711b684687902884` |
+| Respond to Platform Incidents Processing (Task) | 1.0.0 | candidate | `37fefa4b6d34e0922d190d0f94695ebc52f43302` |
+| Fault Management & Service Assurance component | 1.0 | active | `644b2e1b333496ad806aa54239050574362090e7` |
+| Event Correlation Component | 1.0 | active | `66ca9e3722b1333930104ba0de667f8f56e60a26` |
+| Network Inventory & Topology component | 1.0 | active | `01966b880c1051478ee479557baf897e2e1b0574` |
+| Collect alarms and events from network elements (ISF) | 1.0.0 | planned / proposed | `4d9bb1d4702e74538cd89409b4d34bac654a0058` |
+| Correlate alarms into service incidents (ISF) | 1.0.0 | planned / proposed | `e2e0e96d2dfb7e7f6055e4178f94ff1b44a1f4bc` |
+| Dispatch field teams for network repairs (ISF) | 1.0.0 | planned / proposed | `8fd364777833dad29865d5092efd6c405f796b42` |
+| Maintain network resource inventory (ISF) | 1.0.0 | planned / proposed | `da4805b12f62f32cf2c27a225b085386b77c850a` |
+| Track service degradation against SLAs (ISF) | 1.0.0 | planned / proposed | `9c992347a953c31c37bb64ca027f29a1dc2b03c6` |
+| Alarm Collection Service (ISS) | 1.0.0 | active / proposed | `4656f26c2e6e1f94040aaed42e82790b635d4cea` |
+| Alarm Correlation Service (ISS) | 1.0.0 | active / proposed | `32d82d5dc3d5c7427082b219ba3b89a960ec6223` |
+| Field Dispatch Service (ISS) | 1.0.0 | active / proposed | `10448b36b51b99a538fbf875097a50be69b15ad5` |
+| Trouble Ticketing Service (ISS) | 1.0.0 | active / proposed | `4edf1ad21266b382584290e5e654541307c011e6` |
+| Resource Inventory Service (ISS) | 1.0.0 | active / proposed | `b44398c4c2f56943e5e3744679d70788ca2adb86` |
+| Alarm Collection Interface | 1.0.0 | active / proposed | `ba426a576adeb8ce3746b81ae5cb3686cf9b3971` |
+| Alarm Correlation Interface | 1.0.0 | active / proposed | `d5577d43ec951276bce797a3fa876021306389cd` |
+| Field Dispatch Interface | 1.0.0 | active / proposed | `e8095b05ea6da7424424ffee403de13a124b640c` |
+| Trouble Ticketing Interface | 1.0.0 | active / proposed | `1b4d7eb3db0f636dcce41e20bbdc9f6288f72668` |
+| Resource Inventory Interface | 1.0.0 | active / proposed | `9b6601b49a407e9c73f765f1d7aa6e6e66265c52` |
+| Mean Time to Recovery metric | 1.2.0 | admitted | `dfcc6aa3a2ba87506ebf48f256636e3a81bb787a` |
+| Mean Time to Detect metric | 1.1.0 | candidate | `e0203636da241eea26ff04c2bc29f56edc64cf0a` |
+| AI Incident Escalation Compliance metric | 1.1.0 | candidate | `1abaf000433c5af5b766821b4051b2b104c7ce44` |
+| First-Pass Anomaly Resolution (RAN Operations) metric | 1.0.0 | candidate | `049b8b7e62ba51cd290c50cd2ea38ab1776ecdda` |
+
+For canonical repository locations, use the catalogue links and record paths in Sections 4–6. Where a repository still has a legacy name, the current live repository path is the resolvable source; do not infer a destination URL from the OpenDEAM rename target.
