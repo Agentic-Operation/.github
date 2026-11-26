@@ -62,7 +62,7 @@ The AOP artefacts must be referenced by repository, path, version and content di
 
 ### 4.1 Business capability
 
-<badge color="success">Active catalogue record</badge>
+**Catalogue lifecycle:** active
 
 **Incident and Problem Management**
 
@@ -347,7 +347,7 @@ The worked example may progress from architecture crosswalk to executable refere
 
 ## 12. Current disposition
 
-<badge color="warning">Architecture crosswalk only</badge>
+**Current status:** architecture crosswalk only
 
 The OpenDEA catalogues contain relevant and useful records for incident management, network monitoring, fault-management functions, components, information-system services and interfaces. This is sufficient to make the worked example concrete rather than hypothetical.
 
